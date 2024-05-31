@@ -1,0 +1,20 @@
+body {
+  /* background: url(../img/1.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 100vh; */
+}
+
+body::before {
+  content: "";
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.hidden {
+  display: none;
+}
