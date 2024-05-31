@@ -1,20 +1,96 @@
-body {
-  /* background: url(../img/1.jpg) no-repeat center fixed;
-  background-size: cover;
-  height: 100vh; */
-}
-
-body::before {
-  content: "";
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-}
-
 .hidden {
   display: none;
+}
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-start;
+}
+.left {
+  padding: 1rem;
+  flex: 1;
+  min-width: 300px;
+}
+
+.clock-weather {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem;
+}
+.clock {
+  margin-top: 1rem;
+}
+.clock h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.weather-city {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.login-input {
+  border: 0;
+  background: none;
+  border-bottom: solid rgba(255, 255, 255, 0.5) 1.5px;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+.login-input:focus {
+  outline: none;
+  color: white;
+}
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.login-btn {
+  background: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 1rem;
+}
+
+.login-user {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.login-user .user {
+  font-size: 2rem;
+}
+
+.login-user button {
+  display: block;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 1rem;
+}
+
+.right {
+  flex: 1;
+  padding: 1rem;
 }

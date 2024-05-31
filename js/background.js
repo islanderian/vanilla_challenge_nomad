@@ -4,3 +4,4 @@ const random = Math.floor(Math.random() * images.length);
 
 document.body.style.background = `url(../img/${images[random]}) no-repeat center fixed`;
 document.body.style.backgroundSize = "cover";
+document.body.style.backgroundBlendMode = "lighten";

@@ -8,26 +8,41 @@
     <script defer src="./js/clock.js"></script>
     <script defer src="./js/login.js"></script>
     <script defer src="./js/background.js"></script>
+    <script defer src="./js/weather.js"></script>
     <title>Vanilla Last Challenge</title>
   </head>
   <body>
-    <div class="clock">
-      <h2></h2>
-    </div>
-    <div class="log-in">
-      <form class="login-form">
-        <input
-          class="login-input"
-          type="text"
-          maxlength="15"
-          placeholder="What is your name?"
-          required
-        />
-        <input class="login-btn" type="submit" value="Log In" />
-      </form>
-      <div class="login-user">
-        <h1></h1>
-        <!-- <button>LogOut</button> -->
+    <div class="wrap">
+      <div class="left">
+        <div class="clock-weather">
+          <div class="weather">
+            <span class="weather-city"></span>
+            <span class="weather-info"></span>
+          </div>
+          <div class="clock">
+            <h2></h2>
+          </div>
+        </div>
+        <div class="log-in">
+          <form class="login-form">
+            <input
+              class="login-input"
+              type="text"
+              maxlength="15"
+              placeholder="What is your name?"
+              required
+            />
+            <input class="login-btn" type="submit" value="Log In" />
+          </form>
+          <div class="login-user hidden">
+            <span>user: </span>
+            <span class="user"></span>
+            <button>LogOut</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h1>list</h1>
       </div>
     </div>
   </body>
