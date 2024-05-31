@@ -9,20 +9,12 @@
     <script defer src="./js/login.js"></script>
     <script defer src="./js/background.js"></script>
     <script defer src="./js/weather.js"></script>
+    <script defer src="./js/todo.js"></script>
     <title>Vanilla Last Challenge</title>
   </head>
   <body>
     <div class="wrap">
       <div class="left">
-        <div class="clock-weather">
-          <div class="weather">
-            <span class="weather-city"></span>
-            <span class="weather-info"></span>
-          </div>
-          <div class="clock">
-            <h2></h2>
-          </div>
-        </div>
         <div class="log-in">
           <form class="login-form">
             <input
@@ -40,9 +32,28 @@
             <button>LogOut</button>
           </div>
         </div>
+        <div class="clock-weather">
+          <div class="weather">
+            <span class="weather-city">Loading...</span>
+            <span class="weather-info"></span>
+          </div>
+          <div class="clock">
+            <h2></h2>
+          </div>
+        </div>
       </div>
       <div class="right">
-        <h1>list</h1>
+        <div class="todo-list">
+          <!-- <h1>To-do List</h1> -->
+          <form class="todo-form">
+            <input
+              type="text"
+              placeholder="Write To-do List..."
+              maxlength="30"
+            />
+          </form>
+          <ul></ul>
+        </div>
       </div>
     </div>
   </body>

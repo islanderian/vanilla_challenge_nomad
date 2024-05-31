@@ -2,16 +2,18 @@
   display: none;
 }
 .wrap {
+  box-sizing: border-box;
+  position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: flex-start;
 }
 .left {
-  padding: 1rem;
   flex: 1;
   min-width: 300px;
+  padding: 3rem;
 }
 
 .clock-weather {
@@ -41,21 +43,24 @@
 .weather-city {
   font-size: 1.7rem;
   font-weight: 500;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.login-input {
+.login-input,
+.todo-form > input {
   border: 0;
   background: none;
   border-bottom: solid rgba(255, 255, 255, 0.5) 1.5px;
   font-size: 1.2rem;
-  padding-bottom: 5px;
+  padding-bottom: 0.7rem;
 }
-.login-input:focus {
+.login-input:focus,
+.todo-form > input:focus {
   outline: none;
   color: white;
 }
-.login-input::placeholder {
+.login-input::placeholder,
+.todo-form > input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 .login-btn {
@@ -92,5 +97,29 @@
 
 .right {
   flex: 1;
-  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 30px;
+}
+
+.todo-form > input {
+  width: 100%;
+}
+
+.todo-list ul {
+  margin-top: 1rem;
+}
+.todo-item {
+  margin-bottom: 0.6rem;
+}
+
+.todo-item span:first-child {
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.todo-item span:nth-child(2) {
+  opacity: 0.7;
+  cursor: pointer;
 }
